@@ -10,7 +10,7 @@ function evalInPage(fun) {
 }
 
 evalInPage(function () {
-    //$BL58z$K$7$?$$%-!<%P%$%s%I$rEPO?$9$k$@$1!#(B
+    //無効にしたいキーバインドを登録するだけ。
     Keybind.remove('shift+ctrl');
     Keybind.remove('ctrl+shift');
 });
