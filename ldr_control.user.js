@@ -5,15 +5,14 @@
 // @include http://reader.livedoor.com/reader/*
 // ==UserScript==
 
-function evalInPage(fun) {
-      location.href = "javascript:void (" + fun + ")()";
-}
-
-evalInPage(function () {
-    //無効にしたいキーバインドを登録するだけ。
-    Keybind.remove('shift+ctrl');
-    Keybind.remove('ctrl+shift');
-});
+(function(){
+    //無効化したいキーバインドを登録
+    var Unbind = function(){
+        Keybind.remove('shift+ctrl');
+        Keybind.remove('ctrl+shift');
+    }
+    location.href = "javascript:void (" + Unbind + ")()";
+})();
 
 // livedoor Reader KeyConfig
 /*
