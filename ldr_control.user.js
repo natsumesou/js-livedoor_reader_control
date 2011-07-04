@@ -3,6 +3,7 @@
 // @namespace   http://natsu.me
 // @description key control for livedoor reader
 // @include http://reader.livedoor.com/reader/*
+// @include http://fastladder.com/reader/*
 // ==UserScript==
 
 (function(){
