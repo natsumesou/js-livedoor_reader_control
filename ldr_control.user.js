@@ -12,7 +12,9 @@
         Keybind.remove('shift+ctrl');
         Keybind.remove('ctrl+shift');
     }
-    location.href = "javascript:void (" + Unbind + ")()";
+   window.addEventListener('load', (function(){
+        location.href = "javascript:void (" + Unbind + ")()";
+    })(), false);
 })();
 
 // livedoor Reader KeyConfig
